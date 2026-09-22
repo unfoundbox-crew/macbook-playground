@@ -71,6 +71,7 @@ state(): { chip, view, dial, explode, stack, lidAngleDeg, selected, hovered, tra
            dieSideMm, dieCount, lpddrCount, gpuTiles, cpuBlocks: {super, p, e}, fansVisible, streamSpeed }
 chips(): string[]                    // chip ids in data order
 setChip(id): Promise<void>           // rebuilds chip-dependent geometry, waits one frame
+applyChipObject(chip): Promise<void> // test-only: applies an ad-hoc chip object exactly like setChip
 views(): string[]                    // dims.VIEW_NAMES
 setView(name, {instant?: boolean}): Promise<void>   // tween (or jump) camera + lid + explode + stack + dial preset
 setDial(level: 1|2|3): void
@@ -119,6 +120,10 @@ Five font options (serif body + sans heading pairs) and five accent options, bot
 `dial.init(ctx)` → `tours.init(ctx)` → `trace.init(ctx)` → `ui.init(ctx)` → `api.install(ctx)`.
 Each `init` receives the same `ctx` (see `src/engine/state.js` for its shape) and may register
 `ctx.onFrame(fn)` hooks. The stubs the runtime lane ships define the exact signatures.
+
+Event detail shapes on `ctx.events`: `explode` and `dial` carry the new value as a plain number,
+`chip` the chip object, `view` the view name, `stack` a boolean, `select`/`hover` the registry key or
+null, `theme` `{ theme, dark }`, `trace` the `state.trace` object.
 
 ## Build and scripts
 

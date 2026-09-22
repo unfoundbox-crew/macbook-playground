@@ -74,14 +74,14 @@ const HARDWARE = [
   entry('Display', ROOT, { kind: G, level: 1, explode: 'lid' }),
   entry('LidShell', 'Display', { level: 1, explode: 'lid' }),
   entry('Display.Glass', 'Display', { name: 'Glass', level: 1, explode: 'lid' }),
-  entry('LCDPanel', 'Display', { level: 2, explode: 'lid' }),
+  entry('LCDPanel', 'Display', { level: 1, explode: 'lid' }), // the lit screen is the part a buyer sees first
   entry('MiniLEDBacklight', 'Display', { level: 2, explode: 'lid' }),
   entry('Bezel', 'Display', { level: 1, explode: 'lid' }),
   entry('NotchModule', 'Display', { kind: G, level: 1, explode: 'lid' }),
   entry('Camera', 'NotchModule', { level: 1 }),
   entry('CameraLED', 'NotchModule', { level: 1 }),
   entry('AmbientLightSensor', 'NotchModule', { level: 2 }),
-  entry('LidAngleSensor', 'Display', { level: 2 }),
+  entry('LidAngleSensor', 'Display', { level: 2, explode: 'lid' }),
   entry('DisplayFlex', 'Display', { level: 2 }),
 
   // LogicBoard

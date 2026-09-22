@@ -92,7 +92,7 @@
     "why": "Content pending (step 2)",
     "connects": "Content pending (step 2)",
     "aha": "Content pending (step 2)",
-    "level_min": 2,
+    "level_min": 1,
     "sources": []
   },
   "MiniLEDBacklight": {

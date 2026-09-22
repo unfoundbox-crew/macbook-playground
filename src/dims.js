@@ -51,7 +51,7 @@ export const HINGE = Object.freeze({
   xL: -112 * MM,             // HingeL centre X
   xR: 112 * MM,
   length: 34 * MM,           // along X
-  radius: 3.4 * MM,
+  radius: 3.0 * MM,          // y + radius = BASE.h: the barrel stays under the closed lid
 });
 
 export const VENT_ANTENNA_BAR = Object.freeze({
@@ -101,7 +101,7 @@ export const SCREEN = Object.freeze({
 
 export const KEYBOARD = Object.freeze({
   x0: -140 * MM, x1: 140 * MM,
-  z0: -98 * MM, z1: 6 * MM,             // rear → front
+  z0: -96 * MM, z1: 6 * MM,             // rear → front; the vent notch edge is at −98.6, so keys keep a lip
   pitch: 19 * MM,
   keyW: 16.5 * MM, keyD: 16.5 * MM,
   fnRowD: 8.5 * MM,
@@ -119,9 +119,9 @@ export const TRACKPAD = Object.freeze({
 });
 
 export const SPEAKER_GRILLE = Object.freeze({
-  w: 12 * MM,
+  w: 10 * MM,                          // outer edge at |x| = 152, inside the deck's 2.2 mm edge fillet
   z0: KEYBOARD.z0, z1: KEYBOARD.z1,
-  xL: -150 * MM, xR: 150 * MM,
+  xL: -147 * MM, xR: 147 * MM,
   holePitch: 1.6 * MM,
 });
 
@@ -158,17 +158,20 @@ export const FAN = Object.freeze({
   y: INTERIOR.y0 + 0.5 * MM,            // fan housing bottom
 });
 
+/** Top of the SoC heat spreader at rest (world Y): the thermal stack sits on this and under INTERIOR.y1. */
+export const SPREADER_TOP = LOGIC_BOARD.y + LOGIC_BOARD.t / 2 + SOC.substrate.t + SOC.dieT + SOC.spreaderT; // 7.1 mm
+
+export const HEATSINK_PLATE = Object.freeze({
+  w: 64 * MM, d: 44 * MM, t: 1.0 * MM,
+  cx: SOC.cx, cz: SOC.cz,
+  y: SPREADER_TOP + 0.2 * MM + 0.5 * MM, // plate centre; underside clears the spreader by 0.2 mm
+});
+
 export const HEAT_PIPE = Object.freeze({
   x0: FAN.xL + FAN.radius, x1: FAN.xR - FAN.radius,
   z: SOC.cz,
-  y: LOGIC_BOARD.y + LOGIC_BOARD.t / 2 + SOC.substrate.t + SOC.dieT + SOC.spreaderT + 2.2 * MM,
-  w: 8 * MM, t: 3 * MM,
-});
-
-export const HEATSINK_PLATE = Object.freeze({
-  w: 64 * MM, d: 44 * MM, t: 1.5 * MM,
-  cx: SOC.cx, cz: SOC.cz,
-  y: HEAT_PIPE.y - 1.6 * MM,
+  y: HEATSINK_PLATE.y + HEATSINK_PLATE.t / 2 + 0.9 * MM, // pipe centre, resting on the plate; top at 10.1 mm < INTERIOR.y1
+  w: 8 * MM, t: 1.8 * MM,
 });
 
 export const GRAPHITE_SHEET = Object.freeze({
@@ -212,10 +215,11 @@ export const PORTS = Object.freeze({
   depth: 12 * MM, // how far a port body reaches inward from the wall
 });
 
+/** All four sit clear of the fan footprints (FanL/FanR: |x| 87..143, z −98..−42). */
 export const SMALL_BOARDS = Object.freeze({
-  USBCBoardL: [-135 * MM, -48 * MM, 22 * MM, 20 * MM],   // cx, cz, w, d
-  USBCBoardR: [135 * MM, -45 * MM, 16 * MM, 20 * MM],
-  MagSafeBoard: [-138 * MM, -75 * MM, 14 * MM, 12 * MM],
+  USBCBoardL: [-135 * MM, -30 * MM, 22 * MM, 20 * MM],   // cx, cz, w, d
+  USBCBoardR: [135 * MM, -33 * MM, 16 * MM, 20 * MM],
+  MagSafeBoard: [-149.5 * MM, -75 * MM, 9 * MM, 12 * MM], // between the fan and the left wall
   AudioBoard: [-120 * MM, -18 * MM, 24 * MM, 14 * MM],
   t: 0.8 * MM,
 });
@@ -240,7 +244,7 @@ export const EXPLODE = Object.freeze({
   soc: 30 * MM,
   spreader: 14 * MM,
   lpddrSpread: 18 * MM,        // outward in XZ from the die centre
-  thermal: 95 * MM,
+  thermal: 118 * MM,           // must exceed board + soc + spreader (104 mm) so the spreader stays under the plate
   displayLayerGap: 9 * MM,     // between consecutive lid layers, along the lid normal
 });
 
@@ -277,7 +281,7 @@ export const VIEWS = Object.freeze({
   'Board top-down': { position: [0, 0.34, -0.066], target: [0, 0.0, -0.066], lidAngleDeg: 105, explode: 0.5, stack: false, dial: 2 },
   // Presets that carry explode > 0 target the lifted heights, not the rest pose (board +60 mm, SoC +90 mm).
   'SoC macro': { position: [0.05, 0.137, -0.006], target: [0, 0.097, -0.066], lidAngleDeg: 105, explode: 0.75, stack: false, dial: 3 },
-  Thermal: { position: [0.38, 0.40, 0.32], target: [0, 0.06, -0.05], lidAngleDeg: 105, explode: 1, stack: false, dial: 2 },
+  Thermal: { position: [0.40, 0.42, 0.34], target: [0, 0.07, -0.05], lidAngleDeg: 105, explode: 1, stack: false, dial: 2 },
   // The deck is opaque, so the battery reads from a low three-quarter front once the cells have dropped.
   Battery: { position: [0.30, 0.06, 0.48], target: [0, 0.02, 0.03], lidAngleDeg: 105, explode: 0.375, stack: false, dial: 2 },
   Stack: { position: [0.24, 0.24, 0.20], target: [0, 0.14, -0.066], lidAngleDeg: 105, explode: 0.5, stack: true, dial: 3 },

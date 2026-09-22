@@ -127,26 +127,36 @@ export function install(ctx) {
     async setChip(id) {
       const chip = ctx.chips.find((c) => c.id === id);
       if (!chip) throw new Error(`unknown chip "${id}"`);
-      ctx.chip = chip;
-      state.chip = id;
-      for (const m of ctx.modules) {
-        const g = m.applyChip && ctx.byKey.get(m.NAME)?.[0];
-        if (g) m.applyChip(g, chip, ctx);
-      }
-      ctx.indexNodes();
-      // Keep the rest pose of surviving nodes (they may be exploded right now); record only new ones.
-      const fresh = new Map();
-      ctx.root.traverse((o) => {
-        if (o.userData.part) fresh.set(o, ctx.rest.get(o) ?? o.position.clone());
-      });
-      ctx.rest.clear();
-      for (const [o, p] of fresh) ctx.rest.set(o, p);
-      ctx.emit('chip', chip);
-      run('setDial', state.dial);
-      run('setExplode', state.explode);
-      await ctx.renderOnce();
+      await applyChipObject(chip);
     },
   };
+
+  /**
+   * Apply a chip object (a chips.json entry, or an ad-hoc object from the tests): every module's
+   * applyChip, re-index nodes, refresh rest poses, emit 'chip', re-apply dial and explode, one frame.
+   * The setChip fallback and the applyChipObject test helper share this so they cannot drift apart.
+   */
+  async function applyChipObject(chip) {
+    if (!chip || typeof chip !== 'object') throw new Error('applyChipObject: a chip object is required');
+    ctx.chip = chip;
+    state.chip = String(chip.id ?? 'adhoc');
+    for (const m of ctx.modules) {
+      const g = m.applyChip && ctx.byKey.get(m.NAME)?.[0];
+      if (g) m.applyChip(g, chip, ctx);
+    }
+    ctx.indexNodes();
+    // Keep the rest pose of surviving nodes (they may be exploded right now); record only new ones.
+    const fresh = new Map();
+    ctx.root.traverse((o) => {
+      if (o.userData.part) fresh.set(o, ctx.rest.get(o) ?? o.position.clone());
+    });
+    ctx.rest.clear();
+    for (const [o, p] of fresh) ctx.rest.set(o, p);
+    ctx.emit('chip', chip);
+    run('setDial', state.dial);
+    run('setExplode', state.explode);
+    await ctx.renderOnce();
+  }
 
   const api = {
     state() {
@@ -163,6 +173,8 @@ export function install(ctx) {
     },
     chips: () => ctx.chips.map((c) => c.id),
     setChip: (id) => run('setChip', id),
+    /** Test-only: apply an ad-hoc chip object (not in chips.json) exactly like the setChip fallback. */
+    applyChipObject: (chipObject) => applyChipObject(chipObject),
     views: () => [...VIEW_NAMES],
     setView: (name, opts = {}) => run('setView', name, opts),
     setDial: (level) => run('setDial', level),
