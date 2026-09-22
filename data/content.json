@@ -1,0 +1,738 @@
+{
+  "MacBook": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "Chassis": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "TopCase": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "BottomCase": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "HingeL": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "HingeR": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "VentAntennaBar": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "Feet": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "Display": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "LidShell": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "Display.Glass": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "LCDPanel": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "MiniLEDBacklight": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "Bezel": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "NotchModule": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "Camera": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "CameraLED": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "AmbientLightSensor": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "LidAngleSensor": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "DisplayFlex": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "LogicBoard": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "PCB": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "SoCPackage": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "Substrate": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "Die": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 3,
+    "sources": []
+  },
+  "HeatSpreader": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "LPDDR": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "NAND": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "PMIC": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "ThunderboltRetimer": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "WirelessModule": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "NORFlash": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "USBCBoardL": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "USBCBoardR": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "MagSafeBoard": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "AudioBoard": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "Ports": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "TB5": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "HDMI": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "SDXC": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "HeadphoneJack": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "MagSafe3": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "Thermal": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "HeatPipe": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "HeatsinkPlate": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "FanL": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "FanR": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "GraphiteSheet": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "Power": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "BatteryCell": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "BatteryManagementFlex": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "Audio": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "WooferL": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "WooferR": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "TweeterL": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "TweeterR": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "Mic": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "SpeakerGrilleL": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "SpeakerGrilleR": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "Input": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "Keyboard": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "KeyGrid": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "Backlight": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "TouchIDButton": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "Trackpad": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "Trackpad.Glass": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "StrainGaugePlate": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "TapticEngine": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "TrackpadFlex": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "Stack": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "BootChain": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "XNUKernel": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "UnifiedMemory": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "Scheduler": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "Drivers": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "Metal4": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "MPSGraph": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "PyTorchMPS": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "MLX": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "CoreML": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "CoreAI": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "ANERuntime": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "AccelerateSME": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 2,
+    "sources": []
+  },
+  "FoundationModels": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "App": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 1,
+    "sources": []
+  },
+  "CPUCluster": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 3,
+    "sources": []
+  },
+  "GPUCores": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 3,
+    "sources": []
+  },
+  "NeuralEngine": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 3,
+    "sources": []
+  },
+  "MediaEngine": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 3,
+    "sources": []
+  },
+  "SecureEnclave": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 3,
+    "sources": []
+  },
+  "MemoryController": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 3,
+    "sources": []
+  },
+  "SLC": {
+    "what": "Content pending (step 2)",
+    "why": "Content pending (step 2)",
+    "connects": "Content pending (step 2)",
+    "aha": "Content pending (step 2)",
+    "level_min": 3,
+    "sources": []
+  }
+}

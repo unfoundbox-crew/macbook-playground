@@ -1,0 +1,78 @@
+/* src/ui/theme.css — the single stylesheet. The build inlines it into playground/index.html.
+ * Tokens + base + canvas live here (foundation-runtime). Components go in the marked
+ * section at the end (ui lane). */
+
+:root {
+  --bg: #ffffff;
+  --fg: #111;
+  --muted: #666;
+  --accent: #E8590C;
+  --accent-2: #1C64F2;
+  --font-body: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+  --font-heading: -apple-system, 'Helvetica Neue', Inter, Arial, sans-serif;
+  --card-w: 680px;
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --bg: #0b0b0c;
+  --fg: #ececec;
+  --muted: #9a9a9a;
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]):not([data-theme="dark"]),
+  [data-theme="system"] {
+    --bg: #0b0b0c;
+    --fg: #ececec;
+    --muted: #9a9a9a;
+    color-scheme: dark;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 20px/1.65 var(--font-body);
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+canvas#scene {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  touch-action: none;
+  outline: none;
+}
+
+#ui {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  font-family: var(--font-body);
+}
+
+#ui > * {
+  pointer-events: auto;
+}
+
+[data-ui="0"] #ui {
+  display: none;
+}
+
+/* --- components (ui lane appends below) --- */

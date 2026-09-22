@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "macbook-playground/chips.schema.json",
+  "title": "data/chips.json",
+  "description": "Every shipped Apple M-series variant. Every value may be null until step 2 fills it from research/*.md; unknown stays null, never invented.",
+  "type": "array",
+  "items": { "$ref": "#/definitions/chip" },
+  "definitions": {
+    "nullableNumber": { "type": ["number", "null"] },
+    "nullableCount": { "type": ["integer", "null"], "minimum": 0 },
+    "nullableString": { "type": ["string", "null"] },
+    "nullableBoolean": { "type": ["boolean", "null"] },
+    "stringArray": { "type": "array", "items": { "type": "string" } },
+    "chip": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "family", "tier", "marketing_name", "announce_date", "ships_in_macbook", "chassis",
+        "process_node", "transistors_billion", "cpu_cores_total", "cpu_super_cores", "cpu_p_cores",
+        "cpu_e_cores", "gpu_cores", "gpu_neural_accelerators", "neural_engine_cores", "ane_tops",
+        "ane_tops_basis", "memory_options_gb", "bandwidth_gbs", "lpddr_generation", "lpddr_modules",
+        "die_count", "die_mm2", "media_engines", "thunderbolt_version", "macbook_models",
+        "notable_features", "sources", "status"
+      ],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+        "family": { "type": "string", "pattern": "^M[0-9]+$" },
+        "tier": { "enum": ["base", "Pro", "Max", "Ultra"] },
+        "marketing_name": { "type": "string", "minLength": 1 },
+        "announce_date": { "$ref": "#/definitions/nullableString" },
+        "ships_in_macbook": { "$ref": "#/definitions/nullableBoolean" },
+        "chassis": { "enum": ["air", "pro", null] },
+        "process_node": { "$ref": "#/definitions/nullableString" },
+        "transistors_billion": { "$ref": "#/definitions/nullableNumber" },
+        "cpu_cores_total": { "$ref": "#/definitions/nullableCount" },
+        "cpu_super_cores": { "$ref": "#/definitions/nullableCount" },
+        "cpu_p_cores": { "$ref": "#/definitions/nullableCount" },
+        "cpu_e_cores": { "$ref": "#/definitions/nullableCount" },
+        "gpu_cores": { "$ref": "#/definitions/nullableCount" },
+        "gpu_neural_accelerators": { "$ref": "#/definitions/nullableBoolean" },
+        "neural_engine_cores": { "$ref": "#/definitions/nullableCount" },
+        "ane_tops": { "$ref": "#/definitions/nullableNumber" },
+        "ane_tops_basis": { "enum": ["fp16", "int8", null] },
+        "memory_options_gb": { "type": "array", "items": { "type": "number" } },
+        "bandwidth_gbs": { "$ref": "#/definitions/nullableNumber" },
+        "lpddr_generation": { "type": ["string", "number", "null"] },
+        "lpddr_modules": { "$ref": "#/definitions/nullableCount" },
+        "die_count": { "type": ["integer", "null"], "minimum": 1 },
+        "die_mm2": { "$ref": "#/definitions/nullableNumber" },
+        "media_engines": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["prores", "av1_decode"],
+          "properties": {
+            "prores": { "$ref": "#/definitions/nullableCount" },
+            "av1_decode": { "$ref": "#/definitions/nullableBoolean" }
+          }
+        },
+        "thunderbolt_version": { "type": ["number", "string", "null"] },
+        "macbook_models": { "$ref": "#/definitions/stringArray" },
+        "notable_features": { "$ref": "#/definitions/stringArray" },
+        "sources": { "$ref": "#/definitions/stringArray" },
+        "status": { "enum": ["placeholder", "verified", "unverified"] }
+      }
+    }
+  }
+}

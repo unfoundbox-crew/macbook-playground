@@ -1,0 +1,31 @@
+{
+  "name": "macbook-playground",
+  "version": "0.1.0",
+  "description": "Interactive 3D teaching playground of a 14-inch MacBook Pro (M-series)",
+  "scripts": {
+    "build": "node build.mjs",
+    "placeholders": "node tools/gen-placeholders.mjs",
+    "snap": "node tools/snap.mjs",
+    "serve": "node tools/serve.mjs",
+    "test": "playwright test",
+    "export": "node tools/export-glb.mjs",
+    "validate-glb": "node tools/validate-glb.mjs",
+    "lint": "eslint . --max-warnings 0",
+    "check": "npm run lint && npm run build && npm test"
+  },
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "three": "^0.186.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.63.0",
+    "ajv": "^8.20.0",
+    "esbuild": "^0.28.2",
+    "eslint": "^10.11.0",
+    "globals": "^17.12.0",
+    "gltf-validator": "^2.0.0-dev.3.10"
+  }
+}
